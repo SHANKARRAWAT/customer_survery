@@ -1,0 +1,9 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(112, 112, 234);
+}
+h2 {
+  text-align: center;
+}

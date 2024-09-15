@@ -1,0 +1,41 @@
+.questions {
+  max-width: 30rem;
+  margin: 4rem auto;
+}
+
+.question-text {
+  display: flex;
+  gap: 1rem;
+}
+span {
+  align-self: center;
+}
+h4 {
+  margin: 6px 2px;
+}
+.questions ul {
+  display: flex;
+  gap: 1rem;
+}
+
+li {
+  list-style: none;
+  border: 1px solid black;
+  padding: 1px 5px;
+  border-radius: 40%;
+  background-color: #eee;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.selected {
+  background: red;
+}
+
+.number {
+  display: flex;
+  justify-content: flex-end;
+}
