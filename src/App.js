@@ -1,8 +1,9 @@
 import "./App.css";
-
-import React, { useState } from "react";
+import React from "react";
 import Question from "./components/Question";
 import Welcome from "./components/Welcome";
+import EndExam from "./components/EndExam";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 const surveyQuestions = [
   {
@@ -36,10 +37,15 @@ const surveyQuestions = [
 
 function App() {
   return (
-    <div className="App">
-      <Welcome />
-      <Question questions={surveyQuestions} />
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Welcome />
+        <Routes>
+          <Route path="/" element={<Question questions={surveyQuestions} />} />
+          <Route path="/endexam" element={<EndExam />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 

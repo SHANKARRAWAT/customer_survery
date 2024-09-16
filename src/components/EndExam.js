@@ -2,7 +2,7 @@ export default function Welcome() {
   return (
     <>
       <div>
-        <h2>welcome to The Customer Survey</h2>
+        <h2>Thanks for giving your feedback </h2>
       </div>
     </>
   );
